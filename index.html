@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="./CSS/global_styles.css" />
+    <link rel="stylesheet" href="./CSS/element_styles.css" />
+
+    <script type="module" defer src="Js/app.js"></script>
+  </head>
+
+  <body>
+    <h1>
+      <a id="title" href="https://en.wikipedia.org/wiki/Cookie_Clicker">
+        Cookie Clicker Game
+      </a>
+      <button id="reset_button">Reset Game</button>
+    </h1>
+
+    <div id="game_container">
+      <div id="row_0" class="row">
+        <span id="counter_container">
+          <img
+            id="cookie_stack"
+            src="./Images/cookie_stack.png"
+            alt="stack of cookies"
+          />
+          <div id="cookie_count_disp"></div>
+        </span>
+
+        <div id="cookies_per_second_disp"></div>
+      </div>
+      <span id="row_1" class="row">
+        <span id="baker_container">
+          <button id="cookie_button">
+            <img
+              id="baker"
+              src="Images/baker.png"
+              alt="Click the baker to make a cookie."
+            />
+          </button>
+          <span id="cookie_multiplier_disp"></span>
+        </span>
+        <span id="instructions">
+          Click the baker to make a cookie! Better bakers make more cookies per
+          click! Automate the process by employing more bakers and upgrades
+          below!
+        </span>
+      </span>
+      <span id="row_2" class="row">
+        <span class="upgrade_columns">
+          <span class="upgrade_container" id="2x_cont">
+            <button id="x2_button" class="upgrade_button">2x</button>
+            <span clas="upgrade_cost">Price: 10</span>
+          </span>
+          <span class="upgrade_container" id="3x_cont">
+            <button id="x3_button" class="upgrade_button">3x</button>
+            <span clas="upgrade_cost">Price: 20</span>
+          </span>
+          <span class="upgrade_container" id="4x_cont">
+            <button id="x4_button" class="upgrade_button">4x</button>
+            <span clas="upgrade_cost">Price: 30</span>
+          </span>
+        </span>
+        <span class="upgrade_columns">
+          <span class="upgrade_container" id="cps1_cont">
+            <button id="cps1_button" class="upgrade_button">1 CPS</button>
+            <span clas="upgrade_cost">Price:30</span>
+            <p class="quantity" id="quant_1">0</p>
+          </span>
+          <span class="upgrade_container" id="cps10_cont">
+            <button id="cps10_button" class="upgrade_button">10 CPS</button>
+            <span clas="upgrade_cost">Price:300</span>
+            <p class="quantity" id="quant_10">0</p>
+          </span>
+          <span class="upgrade_container" id="cps100_cont">
+            <button id="cps100_button" class="upgrade_button">100 CPS</button>
+            <span clas="upgrade_cost">Price:1000</span>
+            <p class="quantity" id="quant_100">0</p>
+          </span>
+        </span>
+      </span>
+    </div>
+  </body>
+</html>
